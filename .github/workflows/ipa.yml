@@ -133,7 +133,7 @@ jobs:
       
       - name: Pushing to release
         if: ${{ steps.operation.outputs.needIPARelease == 1 }}
-        uses: ncipollo/release-action@v1
+        uses: ncipollo/release-action@v1.12.0
         with:
           name: "IPADown: ${{ steps.operation.outputs.appName }} - ${{ steps.operation.outputs.appVer }}"
           body: >-
